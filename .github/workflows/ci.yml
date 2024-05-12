@@ -26,5 +26,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Foramt
+      - name: format
         run: test -z $(go fmt ./...)
+
+      - name: Install staiccheck
+        run: go install honnef.co/go/tools/cmd/staticcheck@latest
+
+      - name: Run staticcheck
+        run: staticckeck ./...
