@@ -1,4 +1,5 @@
 # learn-cicd-starter (Notely)
+![code coverage badge](https://github.com/wagslane/go-rabbitmq/actions/workflows/Tests.yml/badge.svg)
 
 update to readme
 
